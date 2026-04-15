@@ -163,60 +163,34 @@
   }
 
   /* publications */
-  .pub-list { list-style: none; }
+  .pub-list {
+    list-style: none;
+    font-size: 14px;
+  }
 
   .pub-item {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-left: 32px;
     position: relative;
-    font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.75;
+    color: #444;
   }
 
   .pub-item .num {
     position: absolute;
     left: 0;
     top: 0;
-    color: #888;
+    color: #666;
     font-size: 13px;
-    font-weight: 600;
   }
 
-  .pub-item .title {
-    font-weight: 600;
-    color: #222;
+  .pub-item .me {
+    font-weight: 700;
   }
 
-  .pub-item .authors {
-    color: #555;
+  .pub-item .level {
+    font-weight: 700;
   }
-
-  .pub-item .authors .me {
-    color: #1a5276;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .pub-item .venue {
-    color: #888;
-    font-style: italic;
-  }
-
-  .pub-item .tag {
-    display: inline-block;
-    font-size: 11.5px;
-    font-style: normal;
-    padding: 1px 7px;
-    border-radius: 3px;
-    margin-left: 4px;
-    vertical-align: middle;
-    font-weight: 600;
-  }
-
-  .tag-a { background: #dde8f0; color: #1a5276; }
-  .tag-b { background: #eee8d5; color: #6a5a3a; }
-  .tag-q1 { background: #d5e8dd; color: #2a6a3a; }
-  .tag-q3 { background: #e8e8e8; color: #555; }
 
   /* patents & projects */
   .plain-list {
@@ -249,6 +223,8 @@
     padding: 1px 6px;
     border-radius: 3px;
     font-weight: 600;
+    background: #eee;
+    color: #444;
   }
 
   .service-list .s-name { color: #333; }
@@ -278,14 +254,14 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-row">
-      <img src="二寸蓝.jpg" class="avatar" style="object-fit:cover;">
+       <img src="photo.jpg" class="avatar" style="object-fit:cover;">
       <div class="header-info">
         <h1>杨宇恒 <span>Yuheng Yang</span></h1>
         <div class="header-meta">
           <div><span class="label">职称：</span>硕士研究生导师</div>
           <div><span class="label">学位：</span>工学博士（吉林大学）</div>
           <div><span class="label">方向：</span>人体运动理解、医学图像处理</div>
-          <div><span class="label">邮箱：</span>yangyuheng@ccu.edu.cn</div>
+          <div><span class="label">邮箱：</span>yangyh@ccu.edu.cn</div>
         </div>
       </div>
     </div>
@@ -315,7 +291,7 @@
     <div class="about">
       <p>杨宇恒，硕士研究生导师，吉林大学工学博士，"长大攀登计划2.0"青年骨干，现为 CCF YOCSEF 长春委员。</p>
       <p>研究方向为人体运动理解与医学图像处理。近五年以第一作者/通讯作者在 IEEE TIP、AAAI、IJCAI 等 CCF A 类期刊/会议上发表论文多篇。每年招收硕士研究生 1–2 名。所在研究组科研氛围浓厚，注重因材施教，曾指导或协助指导多名本科生、硕士生、博士生从事科研工作，具有丰富的指导经验。</p>
-      <div class="recruit">📮 欢迎对计算机视觉研究有浓厚兴趣、以发表顶会/顶刊论文为目标的同学通过邮件联系。</div>
+      <div class="recruit"> 欢迎对计算机视觉研究有浓厚兴趣、以发表顶会/顶刊论文为目标的同学通过邮件联系。</div>
     </div>
   </div>
 
@@ -348,65 +324,47 @@
 
       <li class="pub-item">
         <span class="num">[1]</span>
-        <span class="authors"><span class="me">Yuheng Yang</span>, Haipeng Chen, Zhenguang Liu, Yingda Lyu, Beibei Zhang, Shuang Wu, Zhibo Wang, Kui Ren.</span>
-        <span class="title">Action Recognition with Multi-stream Motion Modeling and Mutual Information Maximization.</span>
-        <span class="venue">IJCAI 2023.</span> <span class="tag tag-a">CCF A</span>
+        <span class="me">Yuheng Yang</span>, Haipeng Chen, Zhenguang Liu, Yingda Lyu, Beibei Zhang, Shuang Wu, Zhibo Wang, Kui Ren. Action Recognition with Multi-stream Motion Modeling and Mutual Information Maximization. <i>IJCAI 2023.</i> <span class="level">（CCF A 类会议）</span>
       </li>
 
       <li class="pub-item">
         <span class="num">[2]</span>
-        <span class="authors">Yingying Jiao, Haipeng Chen, Yingda Lyu, <span class="me">Yuheng Yang*</span>, Shuang Wu, Zhenguang Liu.</span>
-        <span class="title">Rethinking Skeleton-based Action Recognition from Action-class Prediction Distribution Perspective.</span>
-        <span class="venue">IEEE Transactions on Image Processing (TIP).</span> <span class="tag tag-a">CCF A</span>
+        Yingying Jiao, Haipeng Chen, Yingda Lyu, <span class="me">Yuheng Yang*</span>, Shuang Wu, Zhenguang Liu. Rethinking Skeleton-based Action Recognition from Action-class Prediction Distribution Perspective. <i>IEEE Transactions on Image Processing.</i> <span class="level">（CCF A 类期刊）</span>
       </li>
 
       <li class="pub-item">
         <span class="num">[3]</span>
-        <span class="authors">Haipeng Chen, <span class="me">Yuheng Yang*</span>, Yingda Lyu.</span>
-        <span class="title">Skeleton-based Action Recognition with Non-linear Dependency Modeling and Hilbert-Schmidt Independence Criterion.</span>
-        <span class="venue">AAAI 2025.</span> <span class="tag tag-a">CCF A</span>
-      </li>
-
-      <li class="pub-item">
-        <span class="num">[4]</span>
-        <span class="authors"><span class="me">Yuheng Yang</span>, Haipeng Chen.</span>
-        <span class="title">Auxiliary Tasks Benefit Skeleton-based Action Recognition.</span>
-        <span class="venue">ICASSP 2025.</span> <span class="tag tag-b">CCF B</span>
-      </li>
-
-      <li class="pub-item">
-        <span class="num">[5]</span>
-        <span class="authors"><span class="me">Yuheng Yang</span>, Jian Zhao, Zhejun Kuang, Na Ta, Jing Hong*.</span>
-        <span class="title">Kinematic Priors Benefit Skeleton-based Action Recognition.</span>
-        <span class="venue">ICASSP 2026.</span> <span class="tag tag-b">CCF B</span>
-      </li>
-
-      <li class="pub-item">
-        <span class="num">[6]</span>
-        <span class="authors"><span class="me">Yuheng Yang</span>, Quanyi Yu, Na Ta*, Jing Hong*.</span>
-        <span class="title">Auxiliary Tasks Benefit Skin Lesion Segmentation.</span>
-        <span class="venue">ICASSP 2026.</span> <span class="tag tag-b">CCF B</span>
-      </li>
-
-      <li class="pub-item">
-        <span class="num">[7]</span>
-        <span class="authors"><span class="me">Yuheng Yang</span>, Haipeng Chen, Zhenguang Liu, Sihao Hu, Yingying Jiao.</span>
-        <span class="title">Dual Space Representation Learning for Skeleton-based Action Recognition.</span>
-        <span class="venue">IEEE Signal Processing Letters.</span> <span class="tag tag-q3">中科院三区</span>
+        Haipeng Chen, <span class="me">Yuheng Yang*</span>, Yingda Lyu. Skeleton-based Action Recognition with Non-linear Dependency Modeling and Hilbert-Schmidt Independence Criterion. <i>AAAI 2025.</i> <span class="level">（CCF A 类会议）</span>
       </li>
 
       <li class="pub-item">
         <span class="num">[8]</span>
-        <span class="authors">Jing Hong, Shuai Liu, Aifang Li, Chao Wang, Qinghua Li, <span class="me">Yuheng Yang*</span>, Hu Huang.</span>
-        <span class="title">Tuning the Tribological Properties of Metallic Glasses: Synergistic Effects of Laser Nitriding and Subsequent Laser Polishing.</span>
-        <span class="venue">Tribology International.</span> <span class="tag tag-q1">中科院一区</span>
+        Jing Hong, Shuai Liu, Aifang Li, Chao Wang, Qinghua Li, <span class="me">Yuheng Yang*</span>, Hu Huang. Tuning the Tribological Properties of Metallic Glasses: Synergistic Effects of Laser Nitriding and Subsequent Laser Polishing. <i>Tribology International.</i> <span class="level">（中科院一区）</span>
+      </li>
+     
+      <li class="pub-item">
+        <span class="num">[4]</span>
+        <span class="me">Yuheng Yang</span>, Haipeng Chen. Auxiliary Tasks Benefit Skeleton-based Action Recognition. <i>ICASSP 2025.</i> <span class="level">（CCF B 类会议）</span>
+      </li>
+
+      <li class="pub-item">
+        <span class="num">[5]</span>
+        <span class="me">Yuheng Yang</span>, Jian Zhao, Zhejun Kuang, Na Ta, Jing Hong*. Kinematic Priors Benefit Skeleton-based Action Recognition. <i>ICASSP 2026.</i> <span class="level">（CCF B 类会议）</span>
+      </li>
+
+      <li class="pub-item">
+        <span class="num">[6]</span>
+        <span class="me">Yuheng Yang</span>, Quanyi Yu, Na Ta*, Jing Hong*. Auxiliary Tasks Benefit Skin Lesion Segmentation. <i>ICASSP 2026.</i> <span class="level">（CCF B 类会议）</span>
+      </li>
+
+      <li class="pub-item">
+        <span class="num">[7]</span>
+        <span class="me">Yuheng Yang</span>, Haipeng Chen, Zhenguang Liu, Sihao Hu, Yingying Jiao. Dual Space Representation Learning for Skeleton-based Action Recognition. <i>IEEE Signal Processing Letters.</i> <span class="level">（中科院三区）</span>
       </li>
 
       <li class="pub-item">
         <span class="num">[9]</span>
-        <span class="authors">Yuce Chen, Kunkun Shen, Ting Lin, Daijie Chen, Zhong Li, <span class="me">Yuheng Yang*</span>, Xiaoyong Xu.</span>
-        <span class="title">Discovery of Novel Polymyxin E Adjuvants against <i>Acinetobacter baumannii</i> Guided by a Stacking-based Machine Learning Model.</span>
-        <span class="venue">RSC Medicinal Chemistry.</span> <span class="tag tag-q3">中科院三区</span>
+        Yuce Chen, Kunkun Shen, Ting Lin, Daijie Chen, Zhong Li, <span class="me">Yuheng Yang*</span>, Xiaoyong Xu. Discovery of Novel Polymyxin E Adjuvants against <i>Acinetobacter baumannii</i> Guided by a Stacking-based Machine Learning Model. <i>RSC Medicinal Chemistry.</i> <span class="level">（中科院三区）</span>
       </li>
 
     </ul>
@@ -425,13 +383,13 @@
   <div class="section" id="service">
     <h2>学术服务</h2>
     <ul class="service-list">
-      <li><span class="s-tag tag-a">CCF A</span> <span class="s-name">International Joint Conference on Artificial Intelligence (IJCAI) 审稿人</span></li>
-      <li><span class="s-tag tag-a">CCF A</span> <span class="s-name">AAAI Conference on Artificial Intelligence (AAAI) 审稿人</span></li>
-      <li><span class="s-tag tag-a">CCF A</span> <span class="s-name">IEEE Transactions on Multimedia (TMM) 审稿人</span></li>
-      <li><span class="s-tag tag-a">CCF A</span> <span class="s-name">IEEE Transactions on Dependable and Secure Computing (TDSC) 审稿人</span></li>
-      <li><span class="s-tag tag-b">CCF B</span> <span class="s-name">ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM) 审稿人</span></li>
-      <li><span class="s-tag tag-b">CCF B</span> <span class="s-name">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 审稿人</span></li>
-      <li><span class="s-tag tag-q3">CCF C</span> <span class="s-name">International Joint Conference on Neural Networks (IJCNN) 审稿人</span></li>
+      <li><span class="s-tag">CCF A</span> <span class="s-name">International Joint Conference on Artificial Intelligence (IJCAI) 审稿人</span></li>
+      <li><span class="s-tag">CCF A</span> <span class="s-name">AAAI Conference on Artificial Intelligence (AAAI) 审稿人</span></li>
+      <li><span class="s-tag">CCF A</span> <span class="s-name">IEEE Transactions on Multimedia (TMM) 审稿人</span></li>
+      <li><span class="s-tag">CCF A</span> <span class="s-name">IEEE Transactions on Dependable and Secure Computing (TDSC) 审稿人</span></li>
+      <li><span class="s-tag">CCF B</span> <span class="s-name">ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM) 审稿人</span></li>
+      <li><span class="s-tag">CCF B</span> <span class="s-name">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 审稿人</span></li>
+      <li><span class="s-tag">CCF C</span> <span class="s-name">International Joint Conference on Neural Networks (IJCNN) 审稿人</span></li>
     </ul>
   </div>
 
